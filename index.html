@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arsath — Portfolio (Short)</title>
+<style>
+:root{
+  --yellow:#ffbf2e; --orange:#ff7f50; --purple:#6a5acd; --dark:#222; --muted:#7a7a7a; --white:#fff;
+  --glass: rgba(255,255,255,0.94); --max-width:980px; --radius:12px; --shadow:0 8px 20px rgba(0,0,0,0.06);
+  --font-sans:"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:var(--font-sans);background:linear-gradient(180deg,#fafafa,#eef2f4);scroll-behavior:smooth;color:#222;}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max-width);margin:20px auto;padding:14px;background:var(--white);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;}
+header{display:flex;align-items:center;justify-content:space-between;padding:10px 8px;position:sticky;top:0;background:rgba(255,255,255,0.96);backdrop-filter:blur(6px);z-index:40;border-bottom:1px solid #f0f0f0}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:48px;height:48px;border-radius:50%;overflow:hidden;border:3px solid var(--yellow);flex-shrink:0}
+.logo img{width:100%;height:100%;object-fit:cover}
+nav{display:flex;gap:8px}
+nav a{padding:8px 10px;border-radius:10px;font-weight:700;color:var(--dark);font-size:14px}
+.hero{display:flex;gap:18px;align-items:center;padding:18px;border-radius:12px;background:linear-gradient(90deg,#fff9e6,#ffffff);margin-top:12px}
+.hero .left{flex:1}
+.hero h1{font-size:22px;margin:0;display:flex;gap:8px;align-items:center}
+.name{color:var(--yellow);font-weight:900}
+.tag{font-size:13px;color:var(--muted);margin-top:6px}
+.hero .right{
+  width:150px;
+  height:150px;
+  border-radius:12px;
+  overflow:hidden;
+  border:6px solid rgba(255,191,46,0.12);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+}
+.hero .right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.row{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px}
+.card{flex:1 1 220px;background:var(--glass);padding:12px;border-radius:12px;box-shadow:var(--shadow);min-width:220px}
+.card h3{margin:0 0 8px 0;color:var(--orange)}
+.skills{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.chip{padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px;color:#fff;background:linear-gradient(90deg,var(--orange),var(--yellow))}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+.project-card{background:#fff;border-radius:12px;overflow:hidden;border:1px solid #f2f2f2;box-shadow:0 8px 20px rgba(0,0,0,0.03);display:flex;flex-direction:column}
+.project-card img{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+  display:block;
+}
+.project-card .p-body{padding:10px;flex:1;display:flex;flex-direction:column;gap:8px}
+.p-body h4{margin:0;font-size:16px;color:var(--purple)}
+.p-body p{margin:0;color:#555;font-size:13px;flex:1}
+.p-body .btn{display:inline-block;padding:8px 12px;border-radius:999px;background:linear-gradient(90deg,var(--orange),var(--yellow));color:#fff;font-weight:800;font-size:13px;margin-top:8px}
+.contact{margin-top:12px}
+.contact a{display:inline-block;padding:10px 12px;border-radius:10px;background:linear-gradient(90deg,var(--orange),var(--purple));color:#fff;font-weight:700;margin-right:8px}
+footer{text-align:center;color:var(--muted);padding:10px 6px;margin-top:14px;font-size:13px}
+@media(max-width:720px){
+  .hero{flex-direction:column;align-items:flex-start}
+  .hero .right{width:100%;height:200px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- header -->
+  <header>
+    <div class="brand">
+      <div class="logo"><img src="WhatsApp Image 2025-11-18 at 14.48.53_22ac2e3c.jpg" alt="Arsath"></div>
+      <div>
+        <div style="font-weight:800">Arsath</div>
+        <div style="font-size:12px;color:var(--muted)">IAT Student · Forex Trader</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="Academic_CV_Template__1_.pdf" target="_blank">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- hero -->
+  <section class="hero" id="home">
+    <div class="left">
+      <h1><span>I'm</span> <span class="name">Arsath</span></h1>
+      <div class="tag">Instrumentation & Automation Technology — University of Colombo</div>
+      <div style="margin-top:8px;color:#333;font-weight:600">IoT · Robotics · Automated Trading · Algo Backtesting</div>
+      <div class="skills" aria-hidden="true">
+        <div class="chip">Instrumentation</div>
+        <div class="chip" style="background:linear-gradient(90deg,var(--purple),var(--blue))">Automation</div>
+        <div class="chip" style="background:linear-gradient(90deg,var(--green),var(--blue))">Forex Trading</div>
+      </div>
+    </div>
+
+    <div class="right">
+      <img src="WhatsApp Image 2025-11-18 at 14.48.53_22ac2e3c.jpg" alt="Arsath" loading="lazy">
+    </div>
+  </section>
+
+  <!-- summary cards -->
+  <div class="row">
+    <div class="card">
+      <h3>About</h3>
+      <p style="margin:0;color:#444;font-size:13px">I build automation systems and trade FX. Interested in industrial automation, robotics and embedded systems.</p>
+    </div>
+    <div class="card">
+      <h3>Resume</h3>
+      <div style="margin-top:10px"><a class="btn" href="Academic_CV_Template__1_.pdf" target="_blank">Download CV</a></div>
+    </div>
+    <div class="card">
+      <h3>Trading</h3>
+      <div style="margin-top:10px"><a class="btn" href="https://mayonly-use.github.io/fx.github.io" target="_blank">My Trading Site</a></div>
+    </div>
+  </div>
+
+  <!-- projects -->
+  <section id="projects" style="margin-top:12px">
+    <h2 style="margin:0;color:var(--orange);font-size:18px">Selected Projects</h2>
+    <div class="projects">
+
+      <article class="project-card">
+        <img src="40be1126466555.5604e70ed6ded.jpg" alt="Hospital Management System" loading="lazy">
+        <div class="p-body">
+          <h4>Hospital Management System</h4>
+          <p>Patient records, appointments, billing & reporting with clean UI.</p>
+          <a class="btn" href="#">View</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="original-c41d6266c297e9e55aa3ce59b2cb7b82.webp" alt="Subscription Reminder System" loading="lazy">
+        <div class="p-body">
+          <h4>Subscription Billing & Renewal</h4>
+          <p>Auto billing + email/SMS renewal reminders with dashboard.</p>
+          <a class="btn" href="#">View</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="download.jpg" alt="Robot Project" loading="lazy">
+        <div class="p-body">
+          <h4>Line-Following Robot</h4>
+          <p>IR line sensor + ultrasonic obstacle detection with PID.</p>
+          <a class="btn" href="#">View</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="pin_diagram.png" alt="Fence Energizer" loading="lazy">
+        <div class="p-body">
+          <h4>Electric Fence Energizer</h4>
+          <p>Low-power high-voltage fence energizer with safety cutoff.</p>
+          <a class="btn" href="#">View</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact" class="contact">
+    <h3 style="color:var(--orange);margin-top:12px">Contact</h3>
+    <div style="margin-top:8px">
+      <a href="mailto:mjmarsath2002@gmail.com">Email</a>
+      <a href="tel:0752936575">Phone</a>
+      <a href="https://linkedin.com/in/mohammed-jiffry-mohammed-arsath-05ba33354" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Mohammed Arsath — All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
